@@ -1,0 +1,31 @@
+{%extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div style="padding-left: 52px; padding-top: 5px;"><img src="static/images/vertline.jpg" width = "1743" height="5"></div>
+<div class=region>
+    <div>&nbsp;</div>
+    <div>{% block region %}{% endblock %}</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div class="nested">
+        <div><a href='/'>home</a></div>
+        <div>contact</div>
+    </div>
+    <div>{%block painting1 %}{% endblock %}</div>
+    <div>{%block painting2 %}{% endblock %}</div>
+    <div>{%block painting3 %}{% endblock %}</div>
+    <div>&nbsp;</div>
+    <div>{%block painting4 %}{% endblock %}</div>
+    <div>{%block painting5 %}{% endblock %}</div>
+    <div>{%block painting6 %}{% endblock %}</div>
+    <div>&nbsp;</div>
+    <div>{%block painting7 %}{% endblock %}</div>
+    <div>{%block painting8 %}{% endblock %}</div>
+    <div>{%block painting9 %}{% endblock %}</div>
+</div>
+
+{% endblock %}

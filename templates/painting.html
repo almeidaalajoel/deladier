@@ -1,0 +1,17 @@
+{%extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div style="padding-left: 52px; padding-top: 5px;"><img src="static/images/vertline.jpg" width = "1650" height="5"></div>
+<div class="painting" style="padding-top: 15px;">
+    <div>&nbsp;</div>
+    <p style="font-size: 13px;"><strong>{% block name%}{% endblock %}</strong>{%block dimensions%}{% endblock %}</p>
+    <div>{% block back %} {% endblock %}</div>
+    <div>{% block painting%} {% endblock %}</div>
+</div>
+
+
+{% endblock %}

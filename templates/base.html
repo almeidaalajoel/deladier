@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a{
+            color:rgb(128, 129, 23);
+            text-decoration: none;
+        }
+        a:hover {
+            color: maroon;
+            text-decoration: none;
+        }
+        .wrapper{
+            width: 1349px;
+            display:grid;
+            grid-template-columns: 6% 47% 47%;
+            padding-left: 52px;
+            padding-top: 15px;
+        }
+        .events{
+            width: 1200px;
+            display:grid;
+            grid-template-columns: 6% 1% 93%;
+            padding-left: 52px;
+            padding-top: 15px;
+        }
+        .painting{
+            width: 1600px;
+            display:grid;
+            grid-template-columns: 6% 94%;
+            padding-left: 52px;
+            padding-top: 15px;
+        }
+        .region{
+            padding-top: 15px;
+            padding-left: 52px;
+            width: 1349px;
+            display:grid;
+            grid-template-columns: 6% 42% 42% 42%;
+        }
+
+        .region > div{
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+
+        .wrapper > div{
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+        .nested {
+            display:grid;
+            grid-auto-rows: 25px; 
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div style="padding-left: 82px;">
+        <img src = "static/images/logo00.jpg" alt="logo" width="100" height="81">
+    </div>
+    <div style="padding-left: 52px; font-size: 11px;">DELADIER ALMEIDA</div>
+    {% block body %}{% endblock %}
+</body>
+</html>
